@@ -1,0 +1,103 @@
+/*
+    Pilko teksto spalva
+    #666;
+
+    Bloko viršutinio border ir h1 spalva:
+    #0974b3
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    background: rgba(211, 211, 211, 0.795);
+}
+
+h1 {
+    font-size: 900;
+    color: #0974b3;
+}
+
+.metai {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.box-container {
+    display: flex;    
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.box {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #6666665b;
+    border-top: 6px solid #666;
+    width: 350px;
+    height: 700px;
+    border-radius: 0 0 10px 10px;
+}
+
+.box1 img {
+    width: 200px;
+    float: left;
+    margin: 10px;
+}
+
+.box button {
+    background: #0974b3;
+    color: white;
+    width: 250px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 10px 0 10px 0;
+    border: none;
+}
+.box1 a {
+    color: white;
+    text-decoration: none;
+}
+button:hover {
+    cursor: pointer;
+    background: #043857;
+    color: white;
+}
+.box:hover {
+    margin-top: -1px;
+    border-top: 6px solid #0974b3;
+    transition: 0.5s;
+}
+
+.foto {
+    position: relative;
+}
+.darker {
+    filter: none;
+}
+
+.top {
+    position: absolute;
+    opacity: 0;
+    height: 200px;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.foto:hover .top {
+    opacity: 1;
+}
+.foto:hover .darker {
+        filter: brightness(50%);
+}
+
